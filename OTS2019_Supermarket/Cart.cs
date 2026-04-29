@@ -184,7 +184,7 @@ namespace OTS_Supermarket
                 {
                     discount = 0.2;
                 }
-                else if (Size > 5 && Amount > 1200 && chair_counter >= 1 || (keyboard_counter >= 1 && monitor_counter >= 1))
+                else if (Size > 5 && Amount > 1200 && (chair_counter >= 1 || (keyboard_counter >= 1 && monitor_counter >= 1)))
                 {
                     discount = 0.18;
                 }
@@ -202,7 +202,5 @@ namespace OTS_Supermarket
             }
             Budget = Budget - price;
         }
-
-
     }
 }
